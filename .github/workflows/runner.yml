@@ -48,7 +48,7 @@ jobs:
           sparse-checkout: |
             /go.mod
             /go.sum
-            /Tinglysning-GitHub.go
+            /tinglysning/Tinglysning-GitHub.go
           sparse-checkout-cone-mode: false
           token: "${{ secrets.PAT }}"
 
