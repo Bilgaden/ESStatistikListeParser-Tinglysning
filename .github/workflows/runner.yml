@@ -171,6 +171,8 @@ jobs:
 
       - name: Run Tinglysning Go script
         run: |
+          mv ${{ github.workspace }}/tinglysning/Tinglysning-GitHub.go ${{ github.workspace }}/Tinglysning-GitHub.go
+          
           go run Tinglysning-GitHub.go
         env:
           REMOVE_COUNT_FROM_VINS: ${{ env.REMOVE_COUNT_FROM_VINS }}
